@@ -1,9 +1,6 @@
 # this is only a example code of how call chain(variable who contain all configuration about database and llm) not use if not execute chain_composition before.
-from pydantic import BaseModel
 import chain
-
-class Question(BaseModel):
-    __root__: str
+from question import Question
 
 # Define the question input
 question_text = "What is the latest research on large language models?"
